@@ -29,6 +29,6 @@ jobs:
           key: ${{ secrets.PUBLIC_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            docker pull mentalpirate/python-flask:latest
-            sudo start -d mentalpirate/python-latest 
+            sudo docker pull mentalpirate/python-flask:latest
+            sudo start -d -p 5000:5000 mentalpirate/python-latest 
   
