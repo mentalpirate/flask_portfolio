@@ -29,7 +29,7 @@ jobs:
           key: ${{ secrets.PUBLIC_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            sudo docker login -u mentalpirate -p {{ secrets.DOCKERHUB_TOKEN}}
+            sudo docker login -u mentalpirate -p {{ secrets.DOCKERHUB_TOKEN }}
             sudo docker pull mentalpirate/python-flask:latest
-            sudo docker run -d -p 5000:5000 mentalpirate/python-latest 
+            sudo docker run -d -p 5000:5000 mentalpirate/python-flask:latest 
   
