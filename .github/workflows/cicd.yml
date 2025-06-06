@@ -31,5 +31,5 @@ jobs:
             sudo docker login -u mentalpirate -p {{ secrets.DOCKERHUB_TOKEN }}
             sudo docker pull mentalpirate/python-flask:latest
             sudo docker stop flask-app 2>/dev/null
-            sudo docker run -d -p --rm --name pyflask 5000:5000 mentalpirate/python-flask:latest 
+            sudo docker run -d --rm -p 5000:5000 --name pyflask 5000:5000 mentalpirate/python-flask:latest 
   
