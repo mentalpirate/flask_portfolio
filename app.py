@@ -14,7 +14,7 @@ def help():
 @app.post("/data")
 def data():
     if request.method == "POST":
-        return f"Data has been successfully submitted {request.form['data']}"
+        return f"Data has been successfully submitted. please go ahead {request.form['data']}"
 
 if __name__ == "__main__":
     app.run(debug=True)
