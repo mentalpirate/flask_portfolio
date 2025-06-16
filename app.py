@@ -10,6 +10,8 @@ def index():
 def help():
     return render_template("help.html")
 
+
+
 # Http method
 @app.post("/data")
 def data():
